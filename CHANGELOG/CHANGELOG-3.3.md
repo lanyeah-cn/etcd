@@ -272,7 +272,7 @@ Note that any `etcd_debugging_*` metrics are experimental and subject to change.
 
 ### Dependency
 
-- Upgrade [`github.com/coreos/bbolt`](https://github.com/etcd-io/bbolt/releases) from [**`v1.3.1-coreos.6`**](https://github.com/etcd-io/bbolt/releases/tag/v1.3.1-coreos.6) to [**`v1.3.3`**](https://github.com/etcd-io/bbolt/releases/tag/v1.3.3).
+- Upgrade [`go.etcd.io/bbolt`](https://github.com/etcd-io/bbolt/releases) from [**`v1.3.1-coreos.6`**](https://github.com/etcd-io/bbolt/releases/tag/v1.3.1-coreos.6) to [**`v1.3.3`**](https://github.com/etcd-io/bbolt/releases/tag/v1.3.3).
 
 ### etcdctl v3
 
@@ -851,7 +851,7 @@ See [code changes](https://github.com/etcd-io/etcd/compare/v3.2.0...v3.3.0) and 
 
 ### Improved
 
-- Use [`coreos/bbolt`](https://github.com/coreos/bbolt/releases) to replace [`boltdb/bolt`](https://github.com/boltdb/bolt#project-status).
+- Use [`coreos/bbolt`](https://go.etcd.io/bbolt/releases) to replace [`boltdb/bolt`](https://github.com/boltdb/bolt#project-status).
   - Fix [etcd database size grows until `mvcc: database space exceeded`](https://github.com/etcd-io/etcd/issues/8009).
 - [Support database size larger than 8GiB](https://github.com/etcd-io/etcd/pull/7525) (8GiB is now a suggested maximum size for normal environments)
 - [Reduce memory allocation](https://github.com/etcd-io/etcd/pull/8428) on [Range operations](https://github.com/etcd-io/etcd/pull/8475).
@@ -884,7 +884,7 @@ See [code changes](https://github.com/etcd-io/etcd/compare/v3.2.0...v3.3.0) and 
 
 ### Dependency
 
-- Upgrade [`boltdb/bolt`](https://github.com/boltdb/bolt#project-status) from [**`v1.3.0`**](https://github.com/boltdb/bolt/releases/tag/v1.3.0) to [`coreos/bbolt`](https://github.com/coreos/bbolt/releases) [**`v1.3.1-coreos.6`**](https://github.com/coreos/bbolt/releases/tag/v1.3.1-coreos.6).
+- Upgrade [`boltdb/bolt`](https://github.com/boltdb/bolt#project-status) from [**`v1.3.0`**](https://github.com/boltdb/bolt/releases/tag/v1.3.0) to [`coreos/bbolt`](https://go.etcd.io/bbolt/releases) [**`v1.3.1-coreos.6`**](https://go.etcd.io/bbolt/releases/tag/v1.3.1-coreos.6).
 - Upgrade [`google.golang.org/grpc`](https://github.com/grpc/grpc-go/releases) from [**`v1.2.1`**](https://github.com/grpc/grpc-go/releases/tag/v1.2.1) to [**`v1.7.5`**](https://github.com/grpc/grpc-go/releases/tag/v1.7.5).
 - Upgrade [`github.com/ugorji/go/codec`](https://github.com/ugorji/go) to [**`v1.1`**](https://github.com/ugorji/go/releases/tag/v1.1), and [regenerate v2 `client`](https://github.com/etcd-io/etcd/pull/8721).
 - Upgrade [`github.com/ugorji/go/codec`](https://github.com/ugorji/go) to [**`ugorji/go@54210f4e0`**](https://github.com/ugorji/go/commit/54210f4e076c57f351166f0ed60e67d3fca57a36), and [regenerate v2 `client`](https://github.com/etcd-io/etcd/pull/8574).

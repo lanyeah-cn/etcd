@@ -652,7 +652,7 @@ See [security doc](https://etcd.io/docs/latest/op-guide/security/) for more deta
 
 ### etcd server
 
-- Replace backend key-value database `boltdb/bolt` with [`coreos/bbolt`](https://github.com/coreos/bbolt/releases) to address [backend database size issue](https://github.com/etcd-io/etcd/issues/8009).
+- Replace backend key-value database `boltdb/bolt` with [`coreos/bbolt`](https://go.etcd.io/bbolt/releases) to address [backend database size issue](https://github.com/etcd-io/etcd/issues/8009).
 
 ### client v3
 
